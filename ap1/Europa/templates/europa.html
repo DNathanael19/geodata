@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa</title>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 14vh;
+    background-color: darkslategray;
+}
+
+h1{
+    color: white;
+    font-family: 'Tilt Neon', cursive;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 20vh;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    transition: 0.5s;
+}
+
+a:hover{
+    opacity: 0.3;
+    color: azure;
+}
+</style>
+
+<body>
+
+    <nav class="nav">
+
+        <h1>Europa: Países</h1>
+
+        <ul>
+            <li><a href="{% url 'georgia' %}">Georgia</a></li>
+            <li><a href="{% url 'chipre' %}">Chipre</a></li>
+        </ul>
+
+    </nav>
+
+
+</body>
+</html>
